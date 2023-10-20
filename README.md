@@ -6,12 +6,13 @@ In this Kata, draw calls and how to reduce them with sprite atlasses will be ana
 ![drawcall gif](https://github.com/buraksonmz/kata-spriteatlas/assets/141739960/9e99f171-c1db-4a26-8af9-d9068c206d33)
 
 Draw call is a simply CPU saying GPU to draw something.  
-Main thread goes idle while Render thread processing draw calls.  
+When there are too many draw calls, the CPU can end up spending a significant amount of time waiting for the render thread to finish processing the graphics. 
 
 **Disadvantages of high draw calls**  
-Quick battery draining
-Device heat up
-Low performance
+Quick battery draining  
+Device heat up  
+Low performance & Lagging
+
 **How to reduce draw calls**  
 Low poly objects  
 Friendly shaders  
